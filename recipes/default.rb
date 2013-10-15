@@ -16,5 +16,5 @@ file f do
   group "root"
   mode "0755"
   action :create
-  content "yes!"
+  content "yes!\n"
 end
