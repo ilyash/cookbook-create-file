@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-f="/tmp/chef-works"
+f=node['create_file']['file_name']
 
 Chef::Log.warn("Will create file #{f}")
 
@@ -16,5 +16,5 @@ file f do
   group "root"
   mode "0755"
   action :create
-  content "yes!\n"
+  content node['create_file']['file_contents']
 end

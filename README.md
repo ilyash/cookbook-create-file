@@ -7,6 +7,8 @@ Requirements
 
 Attributes
 ==========
+`node['create_file']['file_name']` - name of the file to create (defaut: `/tmp/chef-works`)
+`node['create_file']['file_contents']` - contents of the file to create (defaut: `yes!`)
 
 Usage
 =====
