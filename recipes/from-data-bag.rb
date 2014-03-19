@@ -9,7 +9,7 @@
 
 cf = node['create_file']
 f=cf['file_name']
-contents = data_bag_item(cf['data_bag_name'], cf['data_bag_item'])
+contents = data_bag_item(cf['data_bag_name'], cf['data_bag_item'])[cf['data_bag_key']]
 
 Chef::Log.warn("Will create file #{f}")
 
